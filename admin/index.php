@@ -2,7 +2,9 @@
 # ==== Initial ====
 include dirname(__DIR__) . DIRECTORY_SEPARATOR . "core" . DIRECTORY_SEPARATOR . "init.php";
 
-(authentication(true)) ? '' : diePage('به این منطقه نمیخوری');
+include dirname(__DIR__) . DIRECTORY_SEPARATOR . "module" . DIRECTORY_SEPARATOR . "header.php";
+
+(authentication(true)) ? '' : diePage('شما به این مکان دسترسی ندارید');
 ?>
 
 <form action="<?= FORM_PATH ?>" class="form-add form-control shadow mt-5" method="POST">
