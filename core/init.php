@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 // ==== initial ====
 define("BASE_URL", "http://localhost/configRepository/");
 define("BASE_PATH", dirname(__DIR__) . DIRECTORY_SEPARATOR);

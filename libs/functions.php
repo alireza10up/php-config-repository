@@ -40,7 +40,9 @@ function alert(string $alert = null, int $status = null)
 
     $color = ($status == 1) ? "warning" : "danger";
 
-    return "<span id='alert' class='fixed-bottom alert alert-{$color}'>سیستم : {$alert}</span>";
+    return "<span id='alert' class='fixed-bottom alert alert-{$color}'>سیستم : {$alert}</span> <script>
+    setTimeout(() => { document.getElementById('alert').style.display = 'none'; }, 5000);
+    </script>";
 }
 
 function register(string $uname = null, string $pass = null, int $admin = null)

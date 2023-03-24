@@ -10,7 +10,7 @@ if ($_POST) {
 
     $status = $_POST["status"] ?? diePage();
 
-    echo match ($status) {
+    $msg = match ($status) {
         'register' => beforeRegister(),
         'login' => beforeLogin(),
         'logout' => logout(),

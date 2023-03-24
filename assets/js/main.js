@@ -17,7 +17,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-function clearAlert() {
-    setTimeout(() => { document.getElementById('#alert').style.display = 'none'; }, 5000);
-}

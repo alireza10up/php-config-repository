@@ -1,4 +1,7 @@
-<?php defined('BASE_PATH') || die('Access denali !'); ?>
+<?php
+defined('BASE_PATH') || die('Access denali !');
+if (isset($msg)) echo $msg;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
