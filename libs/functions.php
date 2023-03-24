@@ -18,7 +18,7 @@ function firstSetup()
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_OBJ);
     if ($result) {
-        setcookie('firstCheck', true, time() + 1000 * 10000, '/');
+        setcookie('firstCheck', true, time() + 1000000, '/');
         return true;
     }
     return false;
