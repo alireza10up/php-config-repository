@@ -1,7 +1,4 @@
-<?php
-defined('BASE_PATH') || die('Access denali !');
-if (isset($msg)) echo $msg;
-?>
+<?php defined('BASE_PATH') || die('Access denali !'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,9 +21,10 @@ if (isset($msg)) echo $msg;
 </head>
 
 <body dir="rtl">
+    <?= isset($msg) ? $msg : '' ?>
     <header class="bg-dark bg-gradient">
         <nav class="d-flex p-3 justify-content-between align-items-center">
-            <span class="text-black bg-white p-2 rounded-2"><?= SITE_TITLE ?></span>
+            <span onclick="window.location.href = '<?= BASE_URL ?>'" class="btn text-black bg-white p-2 rounded-2"><?= SITE_TITLE ?></span>
             <div class="d-flex">
                 <?php if (isset($_COOKIE["userLogin"])) : ?>
                     <span class="btn btn-primary d-flex gap-2 align-items-center"><span><?= TXT_USER ?> </span><span><?= $_COOKIE["userLogin"]; ?></span>

@@ -8,7 +8,7 @@ defined('BASE_PATH') || die('Access denali !');
 
 function firstSetup()
 {
-    if (isset($_COOKIE['firstCheck'])) return 1;
+    // if (isset($_COOKIE['firstCheck'])) return 1;
 
     global $pdo;
 
@@ -18,7 +18,7 @@ function firstSetup()
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_OBJ);
     if ($result) {
-        setcookie('firstCheck', true, time() + 1000000, '/');
+        // setcookie('firstCheck', true, time() + 1000000, '/');
         return true;
     }
     return false;

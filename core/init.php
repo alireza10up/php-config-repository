@@ -25,6 +25,3 @@ include BASE_PATH . "libs" . DIRECTORY_SEPARATOR . "helpers.php";
 include BASE_PATH . "libs" . DIRECTORY_SEPARATOR . "before.php";
 include BASE_PATH . "libs" . DIRECTORY_SEPARATOR . "functions.php";
 include BASE_PATH . "core" . DIRECTORY_SEPARATOR . "handler.php";
-
-// ==== First Setup ====
-firstSetup();
